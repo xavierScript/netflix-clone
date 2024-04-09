@@ -1,0 +1,303 @@
+/* 
+- Font sizes (px)
+ 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 12
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #000;
+  color: #fff;
+}
+/* html,
+body {
+  height: 100%;
+  min-height: 100%;
+} */
+
+/* General Styles */
+
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.btn {
+  background-color: rgb(193, 17, 25);
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.grid--2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.heading-secondary {
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  letter-spacing: 0.75px;
+}
+
+.section-description {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* Specific styles */
+.section-hero {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 100%,
+      rgba(0, 0, 0, 0.5) 60%,
+      rgba(0, 0, 0, 0.8) 0%
+    ),
+    url(/Images/Hero.jpg);
+
+  background-size: auto;
+  background-position: center;
+  height: 100vh;
+}
+
+.sign-in {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.4rem;
+}
+
+.logo {
+  height: 8.8rem;
+}
+
+.hero-display {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 300px; */
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* line-height: 1.5rem; */
+  /* gap: 4rem; */
+}
+
+.heading-primary {
+  font-size: 4.8rem;
+  font-weight: 900;
+  margin-bottom: 2.6rem;
+}
+
+.hero-text p {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.cta-text {
+  font-size: 2rem !important;
+}
+
+.watch {
+  margin-bottom: 2.6rem;
+}
+
+.email-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 0.8rem;
+  /* gap: 0.8rem; */
+  align-items: center;
+  margin-top: 1.9rem;
+}
+
+.email {
+  height: 5rem;
+  width: 36rem;
+  justify-self: end;
+  padding: 2.4rem 1.6rem 2.4rem;
+  background-color: transparent;
+  color: #fff;
+  border: 0.5px solid rgba(255, 255, 255, 0.39);
+  border-radius: 0.4rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+}
+
+.btn-started {
+  /* justify-self: self-start; */
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+  /* padding: 0.8rem 3.2rem; */
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section tv */
+.section-tv {
+  padding: 6.4rem 0;
+  border-top: 8px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 8px solid rgba(255, 255, 255, 0.15);
+}
+
+.tv-img {
+  height: 420px;
+  width: 500px;
+}
+
+/* Section download */
+
+.section-download {
+  padding: 6.4rem 0;
+  border-bottom: 8px solid rgba(255, 255, 255, 0.15);
+}
+
+.download-img {
+  height: 420px;
+  width: 500px;
+}
+
+/* Section stream */
+
+.section-stream {
+  padding: 6.4rem 0;
+  border-bottom: 8px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Section kids */
+
+.section-kids {
+  padding: 6.4rem 0;
+  border-bottom: 8px solid rgba(255, 255, 255, 0.15);
+}
+
+.kids-img {
+  height: 420px;
+  width: 500px;
+}
+
+/* Section FAQ */
+
+.section-FAQ {
+  padding: 6.4rem 0;
+
+  border-bottom: 8px solid rgba(255, 255, 255, 0.15);
+}
+
+.FAQ-text {
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.item {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 2.6rem 3.6rem;
+  width: 75%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-plus {
+  font-size: 5.2rem;
+  font-weight: 700;
+}
+
+.cta-FAQ {
+  margin-top: 5rem;
+}
+
+/* Footer */
+
+.footer {
+  padding: 6.4rem 0;
+  color: inherit;
+}
+
+.contact {
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+}
+
+.footer-text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.4rem;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#lang {
+  margin-top: 2.4rem;
+  font-size: 2.4rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.footer-para {
+  font-size: 1.4rem;
+  margin-top: 2.4rem;
+}
